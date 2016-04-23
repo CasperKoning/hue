@@ -22,9 +22,9 @@ This will respond with an authorized username:
 ]
 ```
 5. `GET` on `/api/<username>` will respond with all information on the linked Bridge.
-6. `GET` on `api/<username>/lights` will respond with only the information on the connected lights.
-7. `GET` on `api/<username>/ligths/<index>` will respond with only the information on the ligth with the relevant index.
-8. Updating the state of a light can be done by `PUT`ing on `http://<bridge_ip>/api/<username>/lights/<index>/state`,
+6. `GET` on `/api/<username>/lights` will respond with only the information on the connected lights.
+7. `GET` on `/api/<username>/ligths/<index>` will respond with only the information on the ligth with the relevant index.
+8. Updating the state of a light can be done by `PUT`ing on `/api/<username>/lights/<index>/state`,
  e.g. to turn a light off just `PUT` with the body
 ```json
 {
