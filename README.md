@@ -27,6 +27,7 @@ This is a repository in which I store information on controlling my Phillips Hue
 7. `GET` on `/api/<username>/ligths/<index>` will respond with only the information on the ligth with the relevant index.
 8. Updating the state of a light can be done by `PUT`ing on `/api/<username>/lights/<index>/state`,
  e.g. to turn a light off just `PUT` with the body
+
    ```json
    {
       "on":false
