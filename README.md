@@ -53,4 +53,5 @@ This is a repository in which I store information on controlling my Phillips Hue
      }
    }
    ```
+
 More on the Hue API can be found [here](http://www.developers.meethue.com/documentation/core-concepts)
