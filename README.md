@@ -8,17 +8,17 @@ This is a repository in which I store information on controlling my Phillips Hue
 4. Press the link button again and `POST` on `http://<bridge_ip>/api` with body:
 ```json
 {
-"devicetype":"your_device_type"
+  "devicetype":"your_device_type"
 }
 ```
 This will respond with an authorized username:
 ```json
 [
-	{
-		"success": {
-			"username": "some_username"
-		}
+  {
+	"success": {
+		"username": "some_username"
 	}
+  }
 ]
 ```
 5. `GET` on `/api/<username>` will respond with all information on the linked Bridge.
@@ -28,26 +28,26 @@ This will respond with an authorized username:
  e.g. to turn a light off just `PUT` with the body
 ```json
 {
-"on":false
+  "on":false
 }
 ```
 The schema of state is as follows:
 ```json
 {
-"state": {
-		"on": "boolean",
-		"bri": "int: 0 .. 254",
-		"hue": "int 0 .. 65535",
-		"sat": "int 0 .. 254",
-		"effect": "string",
-		"xy": [
-			"double",
-			"double"
-		],
-		"ct": "int",
-		"alert": "string",
-		"colormode": "string",
-		"reachable": "boolean"
+  "state": {
+	"on": "boolean",
+	"bri": "int: 0 .. 254",
+	"hue": "int 0 .. 65535",
+	"sat": "int 0 .. 254",
+	"effect": "string",
+	"xy": [
+		"double",
+		"double"
+	],
+	"ct": "int",
+	"alert": "string",
+	"colormode": "string",
+	"reachable": "boolean"
   }
 }
 ```
